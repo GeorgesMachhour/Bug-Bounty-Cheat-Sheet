@@ -1,0 +1,47 @@
+Subdomain hunting:
+
+sublist3r -d  website.com
+-------------------------
+knock domain.com
+-----------------------
+crt.sh (this is a website)
+
+/////////////////////////////////////////
+
+learn hacking with hackthissite
+
+////////////////////////////////////////////////////
+
+Best vulnerabilty scanners for kali linux/parrot os:
+
+nikto -h https://hostname.com
+-------------------------------
+uniscan -u https://hostname.com
+--------------------------------------
+uniscan -u https://hostname.com -qweds
+---------------------------------------
+
+/////////////////////////////////////////////////////
+
+Gathering emails of a particular domain:
+
+theharvester -d tesla.com -b all
+-----------------------------------
+theharvester -d tesla.com -b google
+--------------------------------------
+hunter.io (website)
+
+/////////////////////////////////////
+
+Exploiting CSRF vulnerability (account takeover):
+
+DVWA csrf tutorial
+
+/////////////////////////////////////////
+
+Perform Bruteforce attack using Burpsuite:
+
+DVWA tutorial
+
+/////////////////////////////////////////
+
