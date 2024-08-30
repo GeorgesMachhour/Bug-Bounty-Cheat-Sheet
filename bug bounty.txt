@@ -45,3 +45,49 @@ DVWA tutorial
 
 /////////////////////////////////////////
 
+Directory and File hunting:
+
+dirb https://www.tesla.com
+------------------------------
+apt-get install golang
+go get github.com/ffuf/ffuf
+cd go/bin
+ls
+./ffuf -w /root/Tools/dictionaries/starter.txt -u https://www.tesla.com/FUZZ
+
+-----------------------------------------------------------------------------
+dirbuster 
+------------------
+///////////////////////////////////////////////////////////////////////////////
+
+NMAP tutorial:
+
+nmap -sn 10.0.0.* (Find all devices on a network)
+nmap -sn 10.0.0.0/24 (Find all devices on a network)
+------------------------------------------------------
+arp-scan -l (Find all devices on a network)
+--------------------------------------------------------
+nmap 10.0.0.4 (on a machine)
+-------------------------------
+nmap -sV 10.0.0.4 (version of ports)
+--------------------------------
+nmap -sV -p21,22 10.0.0.4 (specifying ports 21 and 22)
+----------------------------------------------------------
+nmap -sV -p- 10.0.0.4 (all available ports)
+-------------------------------------------------------------
+nmap -sV -Pn (-Pn to specify no ping for websites forbidding ping requests)
+-----------------------------------------------------------
+nmap -sS 10.0.0.4 (service)
+----------------------------------------------------------
+nmap -O 10.0.0.4 (operating system)
+---------------------------------------------------------
+nmap -A -p21 10.0.0.4 (All scan) (targeting port 21//if not we can remove -p21)
+-----------------------------------------------------------------------------------
+nmap -A -p- 10.0.0.4 (All scan All ports)
+--------------------------------------------------------
+nmap -A -p21 -oN /root/Desktop/nmap-port21-scan.txt 10.0.0.4 (save the results to a txt file)
+--------------------------------------------------------------------------------------------------
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Create password wordlists like a pro:
