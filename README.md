@@ -1,1 +1,114 @@
 # Bug-Bounty-Cheat-Sheet
+---
+
+**Subdomain Hunting:**
+
+- `sublist3r -d website.com`
+- `knock domain.com`
+- `crt.sh` (Website)
+
+---
+
+**Learning Hacking:**
+
+- **Resource:** HackThisSite (Website)
+
+---
+
+**Best Vulnerability Scanners for Kali Linux/Parrot OS:**
+
+1. **Nikto:**  
+   `nikto -h https://hostname.com`
+
+2. **Uniscan:**  
+   - `uniscan -u https://hostname.com`  
+   - `uniscan -u https://hostname.com -qweds`
+
+---
+
+**Gathering Emails of a Particular Domain:**
+
+1. **TheHarvester:**  
+   - `theharvester -d tesla.com -b all`  
+   - `theharvester -d tesla.com -b google`
+
+2. **Hunter.io** (Website)
+
+---
+
+**Exploiting CSRF Vulnerability (Account Takeover):**
+
+- **Resource:** DVWA CSRF Tutorial
+
+---
+
+**Performing Bruteforce Attack using Burpsuite:**
+
+- **Resource:** DVWA Tutorial
+
+---
+
+**Directory and File Hunting:**
+
+1. **Dirb:**  
+   `dirb https://www.tesla.com`
+
+2. **FFUF:**  
+   ```
+   apt-get install golang
+   go get github.com/ffuf/ffuf
+   cd go/bin
+   ls
+   ./ffuf -w /root/Tools/dictionaries/starter.txt -u https://www.tesla.com/FUZZ
+   ```
+
+3. **Dirbuster**
+
+---
+
+**NMAP Tutorial:**
+
+1. **Find All Devices on a Network:**
+   - `nmap -sn 10.0.0.*`
+   - `nmap -sn 10.0.0.0/24`
+   - `arp-scan -l`
+
+2. **Scan a Specific Machine:**
+   - `nmap 10.0.0.4`
+
+3. **Version of Ports:**
+   - `nmap -sV 10.0.0.4`
+   - `nmap -sV -p21,22 10.0.0.4`
+   - `nmap -sV -p- 10.0.0.4`
+
+4. **No Ping for Websites Forbidding Ping Requests:**
+   - `nmap -sV -Pn`
+
+5. **Service Scan:**
+   - `nmap -sS 10.0.0.4`
+
+6. **Operating System Scan:**
+   - `nmap -O 10.0.0.4`
+
+7. **All Scan (Targeting Specific or All Ports):**
+   - `nmap -A -p21 10.0.0.4`  
+   - `nmap -A -p- 10.0.0.4`
+
+8. **Save Scan Results to a TXT File:**
+   - `nmap -A -p21 -oN /root/Desktop/nmap-port21-scan.txt 10.0.0.4`
+
+---
+
+**Creating Password Wordlists:**
+
+1. **Crunch:**
+   - `crunch <min> <max> option`
+   - `crunch 3 4 abcd -o wordlist-crunch.txt`
+   - `crunch 10 10 1234567890 -t georges@@@ -o wordlist-georges.txt`
+
+2. **Cupp (Clone from GitHub):**
+   - `./cupp.py -i`  
+   - Then follow the prompts...
+
+--- 
+
