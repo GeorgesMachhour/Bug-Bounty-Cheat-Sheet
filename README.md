@@ -141,4 +141,15 @@ Check https://www.exploit-db.com/google-hacking-database for more...
 ---
 
 
+*Top 10 hacking tools:*
+-`nmap` (Network mapper for discovering hosts and services on a computer network.)
+-`aircrack-ng` (A suite for wireless security auditing, focusing on WEP and WPA/WPA2 encryption.)
+-`hydra` (A fast and flexible password-cracking tool that supports numerous protocols.)
+-`BurpSuite` (An integrated platform for web application security testing.)
+-`Metasploit` (A penetration testing framework that helps find and exploit vulnerabilities.)
+-`WireShark` (A network protocol analyzer used to capture and inspect data packets in real time.)
+-`hashcat` (A powerful password recovery tool that supports various hashing algorithms.)
+-`JohnTheRipper` (A fast password-cracking tool that supports many encryption formats.)
+-`SQLmap` (An automated tool for detecting and exploiting SQL injection vulnerabilities.)
+-`acunetix` (A web application security scanner that detects vulnerabilities like SQL injection and XSS.)
 
