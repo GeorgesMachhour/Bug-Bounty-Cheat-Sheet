@@ -153,3 +153,100 @@ Check https://www.exploit-db.com/google-hacking-database for more...
 - `SQLmap` (An automated tool for detecting and exploiting SQL injection vulnerabilities.)
 - `acunetix` (A web application security scanner that detects vulnerabilities like SQL injection and XSS.)
 
+---
+
+**Free VPNs for you:**
+- `Proton VPN`
+- `Windscribe`
+- `surfshark`
+- `zsvpn`
+
+---
+
+**Surf anonymously with AnonSurf:**
+AnonSurf is a tool used to route internet traffic through the Tor network, providing anonymity to users. It's primarily designed for Linux distributions like Parrot OS and Kali Linux, helping users maintain their privacy while browsing the web.
+
+Built-in Commands for Parrot OS
+In Parrot OS, you can use the following commands with AnonSurf:
+
+- `anonsurf start ` Starts the AnonSurf service and routes traffic through Tor.
+- `anonsurf stop ` Stops the AnonSurf service and restores normal internet connectivity.
+- `anonsurf status ` Displays the current status of the AnonSurf service.
+- `anonsurf restart ` Restarts the AnonSurf service.
+- `anonsurf menu ` Opens a menu with additional options for managing AnonSurf.
+
+Additional Commands for Kali AnonSurf
+In Kali Linux, the commands may be similar, but here are some specific ones:
+
+- `anonsurf start ` Start the AnonSurf service.
+- `anonsurf stop ` Stop the AnonSurf service.
+- `anonsurf status ` Check the status of AnonSurf.
+- `anonsurf restart ` Restart AnonSurf.
+- `anonsurf help ` Display help and usage information.
+
+Link - `https://github.com/Und3rf10w/kali-anonsurf`
+
+---
+
+
+**Surf with proxychains:**
+Proxychains is a tool that allows you to force any application to use proxy servers for its network connections. It can route traffic through multiple proxies, which can enhance anonymity and security.
+
+To use **Proxychains** to hide your identity while browsing or using network applications, you can follow these steps:
+
+### Basic Command
+
+1. **Run an Application with Proxychains**:
+   ```bash
+   proxychains <application>
+   ```
+   Replace `<application>` with the command for the tool you want to use. For example, to use `curl` to access a website:
+   ```bash
+   proxychains curl http://example.com
+   ```
+
+### Example for Browsing
+
+If you want to use a web browser like Firefox to hide your identity, you can run:
+```bash
+proxychains firefox
+```
+
+### Configuration Steps
+
+1. **Edit the Proxychains Configuration**:
+   Open the configuration file:
+   ```bash
+   sudo nano /etc/proxychains.conf
+   ```
+
+2. **Configure Proxies**:
+   Add your preferred proxies under the `[ProxyList]` section. For example:
+   ```plaintext
+   # type   host      port     [user pass]
+   socks5  127.0.0.1  9050    # Local Tor SOCKS proxy
+   http    192.168.1.1 8080
+   ```
+
+3. **Choose a Chaining Method**:
+   - **Dynamic Chain**: Automatically skips unavailable proxies.
+     ```plaintext
+     dynamic_chain
+     ```
+   - **Strict Chain**: Forces the use of proxies in the order listed.
+     ```plaintext
+     strict_chain
+     ```
+
+### Running Commands
+
+After configuring, you can run any command through Proxychains to hide your identity. For example, to ping a server:
+```bash
+proxychains ping example.com
+```
+
+### Important Note
+
+Make sure to verify that your proxies are working and not leaking your real IP. You can check your IP address before and after using Proxychains to ensure it has changed.
+
+
