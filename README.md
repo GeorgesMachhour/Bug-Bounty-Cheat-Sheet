@@ -130,12 +130,12 @@ You can find online tutorials...
 
 **Google Dorking:**
 
-- 'site: tesla.com ' (Google search results are just related to the website tesla.com)
-- 'site: tesla.com filetype:txt ' (Search results will show the text files of tesla.com)
-- 'inurl:tesla ' (searches for web pages that have "tesla" in their URL.)
-- 'intitle:index ' (searches for web pages that have "index" in their title.)
-- 'intitle:index site:tesla.com ' (earches for web pages on the Tesla website that have "index" in their title.)
-- 'related:hacking' (searches for web pages that are similar to or related to the topic of "hacking.")
+- `site: tesla.com ` (Google search results are just related to the website tesla.com)
+- `site: tesla.com filetype:txt ` (Search results will show the text files of tesla.com)
+- `inurl:tesla ` (searches for web pages that have "tesla" in their URL.)
+- `intitle:index ` (searches for web pages that have "index" in their title.)
+- `intitle:index site:tesla.com ` (earches for web pages on the Tesla website that have "index" in their title.)
+- `related:hacking` (searches for web pages that are similar to or related to the topic of "hacking.")
 Check https://www.exploit-db.com/google-hacking-database for more...
 
 ---
