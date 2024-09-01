@@ -141,7 +141,7 @@ Check https://www.exploit-db.com/google-hacking-database for more...
 ---
 
 
-*Top 10 hacking tools:*
+**Top 10 hacking tools:**
 -`nmap` (Network mapper for discovering hosts and services on a computer network.)
 -`aircrack-ng` (A suite for wireless security auditing, focusing on WEP and WPA/WPA2 encryption.)
 -`hydra` (A fast and flexible password-cracking tool that supports numerous protocols.)
